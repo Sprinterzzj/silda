@@ -12,6 +12,14 @@ wget -v -O cp2 -L https://imperialcollegelondon.box.com/shared/static/bcy32z91hi
 wget -v -O cp3 -L https://imperialcollegelondon.box.com/shared/static/s822i4717vjr6r7wjmbqtuerec2auwpy
 wget -v -O cp4 -L https://imperialcollegelondon.box.com/shared/static/dsd03q1r6oydlg3wrtptp4v4264ladel
 cat cp* > patches.h5
-
 mv patches.h5 ./data/silda-dataset/
-rm cp*
+rm cp1 cp2 cp3 cp4
+
+# Download main SILDa images
+wget -v -O im1 -L https://imperialcollegelondon.box.com/shared/static/ce2kkt0j4uir9tpzcxx55lhfr05bbjx9
+wget -v -O im2 -L https://imperialcollegelondon.box.com/shared/static/j4rx03ymwajz98wsfgbocrurwjq4l68h
+cat im* > silda-images.tgz
+tar xvzf silda-images.tgz
+mv silda-images ./data/silda-dataset/
+rm im1 im2
+rm silda-images.tgz

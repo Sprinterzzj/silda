@@ -18,19 +18,67 @@ Descriptors extracted from RGB patches have not been extensively
 explored in the deep learning literature, possibly due to the fact
 that no large scale colour patches dataset is widely available.
 
-To submit your method to the local patches task, please check the
+To submit your method's results to the local patches task, please check the
 [silda-patches notebook](silda-patches.ipynb) where all the required
 steps are described in detail.
 
+Results will be based on patch retrieval accuracy, using a method
+similar to the [HPatches retrieval protocol](hpatches.github.io).
+
+## Image Matching
+For the *image matching task*, we provide a set of `500k` pairs of images.
+
+To submit your method's results to the image matching task, please
+check the [silda-matching notebook](silda-matching.ipynb) where all the
+required steps are described in detail.
+
+Results will be based on matching accuracy, using epipolar geometry.
+
+## Camera Pose Estimation
+For the *camera pose estimation task*, we provide a set of `4800`
+query images for which the camera pose is not known. We also provide
+`8000` images with known poses as a training set. The users can
+utilise any method they want, to produce full 6DoF camera poses for
+the unknown queries.
+
+To submit your method's results to the camera pose estimation task,
+please check the [silda-camera-poses notebook](silda-camera-poses.ipynb) where
+all the required steps are described in detail.
+
+Results will be based on camera pose accuracy, i.e. measuring
+translation and rotation errors between the prediction and the ground
+truth.
+
+## Building Recognition
+For the *building recognition task*, we provide a set of `4800` query
+images for which the observed buildings are not known. We also provide
+`8000` images together with the labels of the observed buildings. We
+provide a total of 25 buildings, and we provide on average 300 images
+per building as training set. This can be though as a *few shot
+learning* task. The users can utilise any relevant method, to produce
+building labels for the query images.
+
+To submit your method's results to the camera pose estimation task,
+please check the [silda-camera-poses
+notebook](silda-camera-poses.ipynb) where all the required steps are
+described in detail.
+
+Results will be based on standard multi-class classification mAP
+measurements, for the building recognition task.
+
+## Aerial2Ground
+
+More details for this task will be available soon.
 
 ## CVPR 2019 Workshops
 
-[CVPR 2019 Workshop on Long-Term Visual Localization under Changing Conditions]
-(https://sites.google.com/view/ltvl2019)
+The patches, matching and 6DoF tasks are parts of challenges
+associated with 2 CVPR 2019 workshops. For more information, please
+refer to the individual websites below.
 
-[CVPR 2019 Workshop on Image Matching]
-(https://image-matching-workshop.github.io)
+[CVPR 2019 Workshop on Image Matching](https://image-matching-workshop.github.io)
 
+[CVPR 2019 Workshop on Long-Term Visual Localization under Changing Conditions](https://sites.google.com/view/ltvl2019)
 
 
 ## License
