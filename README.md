@@ -3,8 +3,9 @@
 This is the public release of the Scape-Imperial Localisation Dataset
 (*SILDa*).
 
-## Getting the data
+> *Please Note*. This is work in progress, and we are currently adding files. If details for a specific SILDa task are not here yet, please check again soon.
 
+## Getting the data
 We provide a bash script `download.sh` to download all the available data for SILDa.
 To execute, simply open a terminal and type `sh download.sh`. Please note that the download
 will take some time due to the amount of data (approx. 60GB).
@@ -19,25 +20,25 @@ explored in the deep learning literature, possibly due to the fact
 that no large scale colour patches dataset is widely available.
 
 To submit your method's results to the local patches task, please check the
-[silda-patches notebook](silda-patches.ipynb) where all the required
+[silda-patches notebook](silda-local-patches.ipynb) where all the required
 steps are described in detail.
 
 Results will be based on patch retrieval accuracy, using a method
-similar to the [HPatches retrieval protocol](hpatches.github.io).
+similar to the [HPatches retrieval protocol](http://hpatches.github.io).
 
 ## Image Matching
-For the *image matching task*, we provide a set of `500k` pairs of images.
+For the *image matching task*, we provide a set of `335k` pairs of images.
 
 To submit your method's results to the image matching task, please
-check the [silda-matching notebook](silda-matching.ipynb) where all the
+check the [silda-matching notebook](silda-image-matching.ipynb) where all the
 required steps are described in detail.
 
-Results will be based on matching accuracy, using epipolar geometry.
+Results will be based on computing matching accuracy, using epipolar geometry.
 
 ## Camera Pose Estimation
-For the *camera pose estimation task*, we provide a set of `4800`
+For the *camera pose estimation task*, we provide a set of `6064`
 query images for which the camera pose is not known. We also provide
-`8000` images with known poses as a training set. The users can
+`8344` images with known poses as a training set. The users can
 utilise any method they want, to produce full 6DoF camera poses for
 the unknown queries.
 
@@ -50,17 +51,16 @@ translation and rotation errors between the prediction and the ground
 truth.
 
 ## Building Recognition
-For the *building recognition task*, we provide a set of `4800` query
+For the *building recognition task*, we provide a set of `6064` query
 images for which the observed buildings are not known. We also provide
-`8000` images together with the labels of the observed buildings. We
+`8344` images together with the labels of the observed buildings. We
 provide a total of 25 buildings, and we provide on average 300 images
 per building as training set. This can be though as a *few shot
 learning* task. The users can utilise any relevant method, to produce
 building labels for the query images.
 
 To submit your method's results to the camera pose estimation task,
-please check the [silda-camera-poses
-notebook](silda-camera-poses.ipynb) where all the required steps are
+please check the [silda-building-recognition notebook](silda-building-recognition.ipynb) where all the required steps are
 described in detail.
 
 Results will be based on standard multi-class classification mAP

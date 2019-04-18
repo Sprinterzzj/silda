@@ -71,18 +71,3 @@ def spherical_coordinates_to_spherical_rays(pixels, lens, image_size=1024):
     points[2, :] = points[2, :] / mag[:]
 
     return points
-
-
-# Load the lens parameters for a specific image, e.g. 0_0
-# lens = SildaLens('final-data/camera-intrinsics/0_0.intrinsics')
-lens = SildaLens('0_0.intrinsics')
-# Convert a pixel position (e.g. 1200,1200) to a spherical ray.
-# Returns a direction on the 3-dimensional unit sphere, given by the
-# vector from (0,0,0) to r
-r = spherical_coordinates_to_spherical_rays(
-    np.array([[200, 200]]).T, lens, image_size=1024)
-print("200,200\n", r)
-print()
-r = spherical_coordinates_to_spherical_rays(
-    np.array([[1000, 1000]]).T, lens, image_size=1024)
-print("1000,1000\n", r)

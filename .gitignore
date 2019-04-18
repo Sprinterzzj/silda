@@ -3,3 +3,5 @@ FlattenDesc-silda-patches-descriptors.h5
 .ipynb_checkpoints/
 0_0.intrinsics
 ORB-Matcher-silda-matching-results.h5
+Static-Camera-Pose-Estimator-silda-camera-poses.h5
+__pycache__/
