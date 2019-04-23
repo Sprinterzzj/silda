@@ -4,4 +4,5 @@ FlattenDesc-silda-patches-descriptors.h5
 0_0.intrinsics
 ORB-Matcher-silda-matching-results.h5
 Static-Camera-Pose-Estimator-silda-camera-poses.h5
+Random-Building-Classifier-silda-buildings.h5
 __pycache__/

@@ -3,7 +3,9 @@
 This is the public release of the Scape-Imperial Localisation Dataset
 (*SILDa*).
 
-> *Please Note*. This is work in progress, and we are currently adding files. If details for a specific SILDa task are not here yet, please check again soon.
+> *Please Note*. This is work in progress, and we are currently adding
+> examples, and updating the documentation. If details for a specific
+> SILDa task are not here yet, please check again soon.
 
 ## Getting the data
 We provide a bash script `download.sh` to download all the available data for SILDa.
@@ -12,7 +14,7 @@ will take some time due to the amount of data (approx. 60GB).
 
 ## Local Patches
 For the *local patches task*, we provide a set of `557166` interest
-points, each consisting 7 patches.  This leads to a total of `3900162`
+points, each consisting 7 patches. This leads to a total of `3900162`
 individual patches. Note that the patches are saved in their full
 color format, to enable experiments with colour descriptors.
 Descriptors extracted from RGB patches have not been extensively
@@ -48,7 +50,8 @@ all the required steps are described in detail.
 
 Results will be based on camera pose accuracy, i.e. measuring
 translation and rotation errors between the prediction and the ground
-truth.
+truth. For more information on this task, please see
+[www.visuallocalization.net](https://www.visuallocalization.net/)
 
 ## Building Recognition
 For the *building recognition task*, we provide a set of `6064` query
@@ -67,6 +70,10 @@ Results will be based on standard multi-class classification mAP
 measurements, for the building recognition task.
 
 ## Aerial2Ground
+
+More details for this task will be available soon.
+
+## Image Retrieval
 
 More details for this task will be available soon.
 
@@ -94,7 +101,7 @@ We are not currently planning to make the dataset available for commercial use.
 By using SILDa, you agree to the license terms set out above.
 
 ### Privacy
-We take privacy seriously. For this reason, we used software to
+We take privacy very seriously. For this reason, we used software to
 automatically blur faces and licence plates, and in addition we
 verified the results manually. If you have any concerns regarding the
 images and other data provided with this dataset, or find faces or
